@@ -1,0 +1,61 @@
+<script>
+    // promise is a custom async code 
+    // It consists of mainly two stage 
+    // success (resolve)
+
+    // failure (reject)
+const myPromise=(a,b)=>{ 
+    return new Promise((resolve, reject)=>{
+    resolve("i am success");
+    var c=a+b;
+    // return c;
+})
+};
+myPromise(3,4).then((input)=>{
+    console.log(input);
+})
+// or we can write just function expression
+
+// ========================================
+//     const addition = (a,b) => {
+//         return new Promise((success, failure) => {
+//             //success,failure is normal argument
+//             setTimeout(()=>{
+//                 if(a+b>0){
+//                     success(a+b);
+//         //  we can passonly one parameter
+//                     //object/array/string/function
+//                 }
+//                 else{
+//                     failure("the value is less");
+//                 }
+               
+//             },1000)   
+//         })
+// }
+
+     
+//   addition(3,-4).then((input)=>{
+//      console.log(input);
+//   },(error)=>{
+//      console.log("error",error);
+//   })
+
+// console.log("line 32");
+// =================================================
+// how to write after.then
+// addition().then((success input)=>{
+
+// },(error msg)=>{
+
+// })
+// ===========================================
+// 
+//const first_promise= ()=>{
+//   return   new Promise((success,failure)=>{
+//  success("hii this is jasmeen");
+// })
+// }
+// console.log(first_promise());
+
+</script>

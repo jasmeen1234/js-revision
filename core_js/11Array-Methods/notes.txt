@@ -1,0 +1,48 @@
+Notes:
+array:most of array method contain callbavk fun
+
+1.map function
+//map function will not change original array
+//it will add/remove or check some condition and it will return new set of data.
+//it consists of two parameter (i)each iteration value (ii)index value.
+================================================
+2.filter function:
+//it will not change the original array 
+//It is used to filter the data depends upon the condition.
+//Once condition is met it will return the following value into the new array.
+//filter consists of callback function.
+==========================================
+3.find function:
+//it will not change the original array.
+//It is used to find one particular data. IF matches found it will stop searching further
+//if not find particular data then it shows undefine
+//it also consists of index parameter as well.
+========================================
+diffrenc between find and find index filter 
+//find will return single value 
+//findindex will return index
+//filter combination of data will return array
+=====================================
+if we find greater value or condition value then use reduce function and add conditional oprater
+//return will be result a,b a will be result and b will be new value
+4.reduce function: 
+index is not there
+//it will not change the original array. 
+//it used to reduce the value into single parameter 
+//it consists of two parameter one is return result or accumulator and next one is iteraion value and third parameter will be index if needed.
+=======================================
+5.findIndex  -- once match found it will return the index value it will from position 0.if it is not found then will return -1
+6.findLast  - it will find the last vale once match is found it will start from position last.
+it will start searching from last
+7.findLastIndex - it will find the last occurence of that particular value in the given array. 
+=============================================
+8.some - any one value is met the condition it will return the boolean value true otherwise false.
+means in array is any number is greater than 18 it will return true
+9.every - if all the value is met the condition then only it will return true otherwise false.
+==========================================
+polyfil is that browser compatbility for latest version in the browser
+================================
+fill: it will change the original value and similar to slice method and it replae the value
+there two paramete index and length whatever you want to add example fill('world,5,7)
+================
+copywithin: it will copy the index and refilling but in fill it will give own value

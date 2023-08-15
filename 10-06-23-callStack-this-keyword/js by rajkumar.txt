@@ -1,0 +1,86 @@
+console.log("first")
+
+setTimeout(()=>{
+
+console.log("second")
+
+},0)
+
+let promise= new Promise((resolve,reject)=>{
+
+console.log("hello i am running")
+
+setTimeout(()=>{
+
+resolve("third")
+
+},2000)
+
+})
+
+promise.then(resut=>{
+
+console.log(resut)
+
+})
+VM45:1 first
+VM45:11 hello i am running
+Promise {<pending>}[[Prototype]]: Promise[[PromiseState]]: "fulfilled"[[PromiseResult]]: undefined
+VM45:5 second
+VM45:23 third
+function calc(){
+
+let count=0;
+
+return function(){
+
+count++;
+
+console.log(count)
+
+}
+
+}
+
+let call=calc()
+
+call()
+
+call()
+
+let call2 =calc()
+
+call2()
+
+call2()\
+VM51:25 Uncaught SyntaxError: Invalid or unexpected token
+var myObject = {
+
+foo: "bar",
+
+func: () => {
+
+var self = this;
+
+console.log("outer func: this.foo = " + this.foo);
+
+console.log("outer func: self.foo = " + self.foo);
+
+(function() {
+
+console.log("inner func: this.foo = " + this.foo);
+
+console.log("inner func: self.foo = " + self.foo);
+
+}());
+
+}
+
+};
+
+myObject.func();
+VM55:9 outer func: this.foo = undefined
+VM55:11 outer func: self.foo = undefined
+VM55:15 inner func: this.foo = undefined
+VM55:17 inner func: self.foo = undefined
+undefined

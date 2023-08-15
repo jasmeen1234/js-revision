@@ -1,0 +1,130 @@
+// for (var i = 0; i < 3; i++) {
+//   setTimeout(() => console.log(i), 1);
+// }
+// //  3 3 3 
+
+// for (let i = 0; i < 3; i++) {
+//   setTimeout(() => console.log(i), 1);
+// }
+//  0 1 2 
+
+// let a = 3;
+// let b = new Number(3);
+// let c = 3;
+
+// console.log(a == b);
+// console.log(a === b);
+// console.log(b === c);
+
+const obj = { a: 'one', b: 'two', a: 'three' };
+console.log(obj);
+{a:'one'
+
+
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+// console.log("Welcome to Programiz!");
+
+// function checkObj(obj){
+//   let flag=true;
+//     for(temp in obj){
+//         flag=false;
+//         break;
+//     }
+//     return flag;
+// }
+// let obj={name:"jas",salary:"50"}
+// let result=checkObj(obj);
+// console.log(result);
+
+
+//  for (var i = 0; i < 3; i++) {
+//   setTimeout(() => console.log(i), 1);
+//  }
+// // //  3 3 3 
+
+//  for (let i = 0; i < 3; i++) {
+//   setTimeout(() => console.log(i), 1);
+//  }
+ // 0 1 2
+//  let a = 3;
+// let b = new Number(3);
+// let c = 3;
+
+// console.log(a == b);
+// console.log(a === b);
+// console.log(b === c);
+// const sum = eval("10*10+5");
+// console.log(sum);
+const obj = { a: 'one', b: 'two', a: 'three' };
+console.log(obj);
+================================================================
+1 july23
+let c = { greeting: 'Hey!' };
+let d;
+
+d = c;
+c.greeting = 'Hello';
+console.log(d.greeting);
+
+
+class Chameleon {
+  static colorChange(newColor) {
+    this.newColor = newColor;
+    return this.newColor;
+  }
+
+  constructor({ newColor = 'green' } = {}) {
+    this.newColor = newColor;
+  }
+}
+
+const freddie = new Chameleon({ newColor: 'purple' });
+console.log(freddie.colorChange('orange'));
+
+function Person(firstName, lastName) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+}
+
+const member = new Person('Lydia', 'Hallie');
+Person.getFullName = function() {
+  return `${this.firstName} ${this.lastName}`;
+};
+
+console.log(member.getFullName());
+
+
+
+function Person(firstName, lastName) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+}
+
+const lydia = new Person('Lydia', 'Hallie');
+const sarah = Person('Sarah', 'Smith');
+
+console.log(lydia);
+console.log(sarah);
+
+
+ let str='john and david newton'
+// console.log(str.slice(9,14));
+// let str='jasmeen';
+// let reverse='';
+// for(let i=str.length-1; i>=0;i--){
+//     reverse= reverse+str[i];
+// }
+// console.log(reverse);
+let str='jasssmmeeen';
+let target;
+ let count =0;
+for(let i=0;i<=str.length-1;i++){
+    // let count =0;
+    if(target==str[i]){
+        count++;
+    }
+   
+}
+ console.log(count);

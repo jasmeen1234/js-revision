@@ -1,0 +1,5 @@
+1. dsa basis searching sorting basic string and array oopps concept
+2.form table html css
+3.js implementation also events, function, validation, dom,fetch api,object, json, cookies,websocket, exception handling, 
+practical:- 
+4.

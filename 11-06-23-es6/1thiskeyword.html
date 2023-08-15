@@ -1,0 +1,76 @@
+<!-- <script>
+  'use strict'
+  const display={
+    firstName:"akash",
+    calculateAge:function(){
+        console.log(this);
+    },
+    greet:()=>{
+        console.log(this);
+    }
+  }
+  display.calculateAge();
+  display.greet();
+
+</script> -->
+
+<!-- <script>
+    'use strict'
+    const display={
+        firstName: "akash",
+        calculateAge and ischeck is a function that inside the object
+        calculateAge:function(){
+            console.log(this); 
+            if we use method and uske andr this use kiya then it give current object that is calculateage and in normal function refer to undefine 
+            this will refer to curent object that is firstname
+            now i want to access first name then declare in variable that is given
+            let self = this;
+            const isCheck = function(){
+                console.log(this);
+                this will give undefine
+                inside javascript function is also object and is check  is normal function ka this ka first  function is calculateage h  jo current object dega so here we let some variable
+                 console.log(self.firstName);
+                 console.log(this.firstName);
+                 it give undefined
+            },
+            greet:()=>{
+                console.log(this);
+            }
+            isCheck();
+        }
+    }
+    display.calculateAge();
+    display.greet();
+</script> -->
+
+<!-- <script>
+    'use strict'
+    const display={
+        firstName: "akash",
+        calculateAge:function(){
+            console.log(this);
+            const isCheck = ()=>{
+                console.log(this.firstName);
+            }
+            isCheck();
+        }
+    }
+    display.calculateAge();
+</script> -->
+<script>
+    'use strict'
+    let obj={
+        firstname:"jas",
+        getname:function(){
+            console.log(this);
+        },
+        getanotherName:()=>{
+            console.log(this);
+
+        }
+    }
+    obj.getname();
+    obj.firstname();
+    obj.getanotherName();
+</script>
+<!-- interview question this ko explain krte time use execution contest and how arrow function becoz in arrow function how this keyword work -->

@@ -1,0 +1,25 @@
+<script>
+    'use strict'
+    console.log(this);
+    // in global execution this keyword use window object 
+
+    const display={
+        age:33,
+        firstName:function(){
+            console.log(this)
+        }
+    }
+    display.firstName();
+// this output current object bcozit declare inside the method
+    function addition(){
+        console.log(this);
+    }
+    // simple function output undefine
+    addition();
+
+    const subtraction=()=>{
+        console.log(this);
+    }
+    subtraction();
+    // global execution will refer to window object
+</script>

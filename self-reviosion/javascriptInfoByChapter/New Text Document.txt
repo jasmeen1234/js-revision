@@ -1,0 +1,14 @@
+//Variable
+let message; //declaration
+we can write in one line like declaration and assignment both
+let message = 'Hello!';
+We can also declare multiple variables in one line:
+
+let user = 'John', age = 25, message = 'Hello';
+
+
+let user = 'John';       2)let user = 'John',   3)let user = 'John'
+let age = 25;            age = 25,             , age = 25
+let message = 'Hello';   message = 'Hello';      , message = 'Hello';
+all these are same type work
+  

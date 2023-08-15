@@ -1,0 +1,131 @@
+// create diffrent ways object
+// litral syntax object 
+// let obj={
+//     firstName:"jas",
+//     lastname:"bano"
+// }
+// let result=obj.firstName;
+// console.log(result);
+
+
+// 2.constructer object
+
+// let ob=new Object();
+// ob.name="jasmeen";
+// ob.gender="female";
+// console.log(ob);
+
+
+// 3 object create method
+
+// let obj=Object.create(null);
+// obj.name="jas";
+// obj.salary=100000;
+// console.log(obj)
+
+
+// 4 function constructor with prototype
+
+// function person(){}
+// person.prototype.name="jasmeen";
+// let obj=new person();
+// obj.age=26;
+// obj.salary=100000;
+// console.log(obj);
+// 5 function constructor
+function Person(name){
+  this.name=name;
+  this.age=26;
+  this.salary=50000;
+}
+let obj=new Person("jas");
+console.log(obj);
+
+
+
+=======================================
+//diffrent ways to create array
+// array litral
+// let arr=[22,23];
+// // 2.array constructor
+
+// let array=new Array();
+// let arr1=new Array(4);
+// console.log(arr1);
+// console.log(array);
+// const arr3=new Array(3,4,5,6,6);
+// console.log(arr3);
+//4.
+const arr1=Array.from("jasmeen");
+console.log(arr1)
+const arr2=Array.from([3, 4,5],x=>x*2);
+console.log(arr2)
+=============================================================
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+// console.log("Welcome to Programiz bnghn!");
+// let arr=[1,2,3,4];
+// let newArr=[];
+// let j=0;
+// for(let i=arr.length-1;i>=0;i--){
+//      newArr[j++]=arr[i];
+     
+// }
+// console.log(newArr);
+
+// let i=0;
+// let table=0;
+// for(let i=1; i<=10;i++){
+//     table=i*2;
+//     console.log(table);
+// }
+// console.log(table);
+// intialization
+// while(condition){
+//     increment/dec
+// }
+// let i=1;
+// while(i<=10)
+// {
+//     console.log(i*2);
+//   i++ ;
+// }
+
+// let arr=[1,2,3,4]
+// let j=0;//index
+// let i=arr.length-1;
+// let newArr=[];
+// while(i>=0 ){
+//     newArr[j++]= arr[i];
+//     i--;
+// }
+// console.log(newArr)
+
+// 
+// inti
+// do{
+//   in c/dec
+// }
+// while(termination);
+// let i=1;
+// do{
+//     // let i=1;
+    
+//     console.log(i*2);
+//     i++;
+// }
+// while(i<=10)
+let arr=[1,2,3,4];
+let i =arr.length-1;
+let j=0;
+let newArr=[];
+do{
+    newArr[j++]=arr[i];
+   
+    i--;
+    //  console.log(newArr);
+}
+while(i>=0)
+ console.log(newArr);
+ 

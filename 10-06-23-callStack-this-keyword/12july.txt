@@ -1,0 +1,63 @@
+const person = {
+  name: 'Lydia',
+  age: 21,
+};
+
+for (const item in person) {
+  console.log(item);
+}
+
+let person = { name: 'Lydia' };
+const members = [person];
+person = null;
+
+console.log(members);
+
+// let person = { name: 'Lydia' };
+// const members = [person];
+// person = null;
+
+// console.log(members);
+const set = new Set([1, 1, 2, 3, 4]);
+
+console.log(set);
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+// console.log("Welcome to Programiz!");
+// let person = { name: 'Lydia' };
+// const members = [person];
+// person = null;
+
+// console.log(members);
+// const num = parseInt('+7+7*6', 10);
+// console.log(num);
+// const num = parseInt('7*6', 10);
+//  const arr=[1, 2, 3].map(num => {
+//      console.log( typeof typeof num);
+//   if (typeof num === 'number') return;
+//   return num * 2;
+// });
+// console.log(arr);.
+// (() => {
+//   let x = (y = 10);
+// })();
+
+// console.log(typeof x);
+// console.log(typeof y);
+// const set = new Set([1, 1, 2, 3, 4]);
+
+// console.log(set);
+// let num = 10;
+// const increaseNumber = () => num++;
+// const increasePassedNumber = number => ++number;
+
+// const num1 = increaseNumber();
+// const num2 = increasePassedNumber(num1);
+
+// console.log(num1);
+// console.log(num2);
+// [1, 2, 3, 4].reduce((x, y) => console.log(x, y));
+console.log(Number(2) === Number(2));
+console.log(Boolean(false) === Boolean(false));
+console.log(Symbol('foo') === Symbol('foo'));
