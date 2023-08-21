@@ -1,0 +1,23 @@
+<script>
+    class Person{
+        constructor(name){
+            this.name=name;
+            this.occupation="unemployee";
+        }
+        greet(){
+            console.log(`hello ${this.name}`);
+        }
+    }
+    class Student extends Person{
+        constructor(name){
+            super(name);
+            this.occupation="student";
+        }
+        greet(){
+            console.log(`hello student ${this.name}`);
+            console.log(this.occupation);
+        }
+    }
+    let p=new Student("johra");
+    p.greet();
+</script>

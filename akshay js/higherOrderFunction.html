@@ -1,0 +1,60 @@
+<script>
+    function x(){
+        console.log("my name is jasmeen");
+    }
+    function y (x){
+        x();
+    }
+    //here function x is callback and function y is hof
+</script>
+<script>
+    const radius=[3, 1, 2, 4];
+    //calculate the area
+    const calculateArea= function (radius){
+        let output=[];
+        for(let i=0; i<radius.length; i++){
+            output.push(Math.PI *radius[i]*radius[i]);
+        }
+        return output;
+    }
+    console.log(calculateArea(radius));
+    //calculate circumfrence 
+    const calculateCircumfrence= function(radius){
+        for(let i = 0;i<radius.length;i++){
+        output.push(2 *MAth.PI * radius[i]);
+        }
+        return output;
+    }
+    console.log(calculateCircumfrence(radius));
+    //calculate diameter
+    const calculateDiameter = function (radius){
+        for(let i =0; i<radius.length;i++){
+            output.push( 2* radius[i]);
+        }
+        return output;
+    }
+    console.log(calculateDiameter(radius));
+    //here we are repeating most of the things so that is not optimized solution 
+
+
+</script>
+
+<script>
+    //optimize way
+    const radiuss=[1,2,3,4]
+    const area = function (radius){
+        return Math.PI * radius * radius;
+    };
+    const circumfrence = function(radius){
+        return 2 * Math.PI * radius;
+    }
+    const calculate=function (radius, logic){
+        const output=[];
+        for(let i = 0; i<radius.length; i++){
+            output.push(logic(radius[i]));
+        }
+        return output;
+    };
+    console.log(radius, area);
+    console.log(radius, circumfrence);
+</script>

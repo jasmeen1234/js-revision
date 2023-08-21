@@ -1,0 +1,37 @@
+<!-- <script>
+    class Person{
+        constructor(name){
+            this.name=name;
+        }
+        greet(){
+            console.log(`hello ${this.name}`);
+        }
+    }
+    class Students extends Person{
+
+    }
+    let user=new Students("jasmeen jack");
+    console.log(user.name);
+</script> -->
+
+<script>
+//using super keyword
+class Person{
+    constructor(name){
+        this.name=name;
+    }
+    greet(){
+        console.log(`name ${this.name}`);
+    }
+
+}
+class Student extends Person{
+    constructor(name){
+        console.log("creating studens");
+        super(name);
+    }
+
+}
+let user2=new Student("naaz");
+user2.greet();
+</script>

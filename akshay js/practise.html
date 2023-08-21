@@ -1,0 +1,21 @@
+<!-- <script>
+    async function f(){
+        return 1;
+    }
+    f().then(alert 
+    )
+</script>
+<script>
+    async function f(){
+        return Promise.resolve("1");
+
+    } 
+    f().then(alert)
+</script> -->
+<script>
+  let timerId = setTimeout(() => console.log("never happens"), 1000);
+console.log(timerId); // timer identifier
+
+clearTimeout(timerId);
+console.log(timerId); // 
+</script>

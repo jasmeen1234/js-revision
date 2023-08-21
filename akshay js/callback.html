@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hiii learn callback</h1>
+    <button id="clickme">click me</button>
+
+<!-- <script>
+    //what is callback function in js
+    //javascript is shynchronus and single -threaded language
+    //blocking the main thread
+    //power of callbacks?
+    //closer demo with event listner
+    //scope demo with event listner
+    //garbage collection & remove eventlistner
+    setTimeout(function(){
+        console.log("timer");
+    },500)
+    function x(y){
+        console.log("x");
+y();
+    }
+    x(function y (){
+        console.log("y");
+        // y(); yha y ko call krne pr infinite loop me chal rha h 
+    });
+    
+</script> -->
+
+
+<!-- <script>
+    // about event listener
+let x= document.getElementById("clickme").addEventListener("click",function(){
+    console.log("clicked button");
+})
+</script> -->
+
+<script>
+    //closer demo with event listener
+    // interview question is that how many time button will be count 
+   function attachEventListener(){
+    let count=0;
+    document.getElementById("clickme").addEventListener("click", function xy(){
+        console.log("click buttn time", ++count)
+        //using global variable is not good solution so make it closure for data hiding so let wrap itwith a function
+        // use debugger in this code to show xy function is called when click button
+        //go to element and click the butn and in inspected-element-button->eventlistener->show the click how it use handler
+    })
+}
+attachEventListener();
+</script>
+
+<script>
+    //why do we need garbage collector and remove eventlistener
+    //remove eventListener because it took to much memory and attach eventlistner it formed  closure
+</script>
+</body>
+
+</html>

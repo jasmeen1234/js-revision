@@ -31,7 +31,7 @@ Finding individual value or index
 Checking Array or not
 1.isArray- Nooriginal - NoCallBack - will return boolean value 
 
-Loops: - Nooriginal 
+Loops: - No original 
 1.for 
 2.for of 
 3.while 
@@ -66,3 +66,6 @@ Non-primitive:
 1.Array 
 2.object 
 3.null
+===============================
+false condition:
+"", 0 , undefine, null,Nan, false
